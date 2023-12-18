@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Test17",
+  "applicationTitle": "Test17",
+  "items": [
+    {
+      "link": null,
+      "menuName": "главная",
+      "caption": "Главная",
+      "title": "Главная",
+      "children": [
+        {
+          "link": null,
+          "menuName": "справочники",
+          "caption": "Справочники",
+          "title": "Справочники",
+          "children": [
+            {
+              "link": "i-i-s-test17-товары-l",
+              "menuName": null,
+              "caption": "Товары",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-test17-место-выдачи-l",
+              "menuName": null,
+              "caption": "Место выдачи",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "оповещение",
+          "caption": "Оповещение",
+          "title": "Оповещение",
+          "children": [
+            {
+              "link": "i-i-s-test17-оповещения-l",
+              "menuName": null,
+              "caption": "Оповещения",
+              "title": "",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "оформление-заказа",
+          "caption": "Оформление Заказа",
+          "title": "Оформление Заказа",
+          "children": [
+            {
+              "link": "i-i-s-test17-контрагент-l",
+              "menuName": null,
+              "caption": "Контрагент",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-test17-продавец-l",
+              "menuName": null,
+              "caption": "Продавец",
+              "title": "",
+              "children": null
+            },
+            {
+              "link": "i-i-s-test17-заказы-l",
+              "menuName": null,
+              "caption": "Заказы",
+              "title": "",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

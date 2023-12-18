@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "местоВыдачи",
+      "displayAttributeName": "адрес",
+      "required": true,
+      "relationName": "ВНаличии.МестоВыдачи",
+      "projection": "МестоВыдачиL",
+      "detailModelName": "i-i-s-test17-в-наличии"
+    }
+  ],
+  "external": false,
+  "caption": "Товары",
+  "name": "IISTest17ТоварыE",
+  "className": "ТоварыE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test17-товары",
+      "modelProjection": "ТоварыE"
+    }
+  ]
+}

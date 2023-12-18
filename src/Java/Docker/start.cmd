@@ -1,0 +1,1 @@
+docker-compose -p test17-java up -d

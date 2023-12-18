@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-test17-оповещения-e",
+  "editForm": "i-i-s-test17-оповещения-e",
+  "external": false,
+  "caption": "Оповещения",
+  "name": "IISTest17ОповещенияL",
+  "className": "ОповещенияL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-test17-оповещения",
+      "modelProjection": "ОповещенияL"
+    }
+  ]
+}
