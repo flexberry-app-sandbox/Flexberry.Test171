@@ -32,13 +32,6 @@
       "name": "местоВыдачи",
       "relatedTo": "i-i-s-test17-место-выдачи",
       "inverse": null
-    },
-    {
-      "polymorphic": false,
-      "presence": true,
-      "name": "товары",
-      "relatedTo": "i-i-s-test17-товары",
-      "inverse": "вНаличии"
     }
   ],
   "hasMany": [],

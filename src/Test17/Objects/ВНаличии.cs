@@ -45,8 +45,6 @@ namespace IIS.Test17
         
         private IIS.Test17.МестоВыдачи fМестоВыдачи;
         
-        private IIS.Test17.Товары fТовары;
-        
         // *** Start programmer edit section *** (ВНаличии CustomMembers)
 
         // *** End programmer edit section *** (ВНаличии CustomMembers)
@@ -149,41 +147,6 @@ namespace IIS.Test17
         }
         
         /// <summary>
-        /// мастеровая ссылка на шапку IIS.Test17.Товары.
-        /// </summary>
-        // *** Start programmer edit section *** (ВНаличии.Товары CustomAttributes)
-
-        // *** End programmer edit section *** (ВНаличии.Товары CustomAttributes)
-        [Agregator()]
-        [NotNull()]
-        [PropertyStorage(new string[] {
-                "Товары"})]
-        public virtual IIS.Test17.Товары Товары
-        {
-            get
-            {
-                // *** Start programmer edit section *** (ВНаличии.Товары Get start)
-
-                // *** End programmer edit section *** (ВНаличии.Товары Get start)
-                IIS.Test17.Товары result = this.fТовары;
-                // *** Start programmer edit section *** (ВНаличии.Товары Get end)
-
-                // *** End programmer edit section *** (ВНаличии.Товары Get end)
-                return result;
-            }
-            set
-            {
-                // *** Start programmer edit section *** (ВНаличии.Товары Set start)
-
-                // *** End programmer edit section *** (ВНаличии.Товары Set start)
-                this.fТовары = value;
-                // *** Start programmer edit section *** (ВНаличии.Товары Set end)
-
-                // *** End programmer edit section *** (ВНаличии.Товары Set end)
-            }
-        }
-        
-        /// <summary>
         /// Class views container.
         /// </summary>
         public class Views
@@ -199,48 +162,6 @@ namespace IIS.Test17
                     return ICSSoft.STORMNET.Information.GetView("ВНаличииE", typeof(IIS.Test17.ВНаличии));
                 }
             }
-        }
-    }
-    
-    /// <summary>
-    /// Detail array of ВНаличии.
-    /// </summary>
-    // *** Start programmer edit section *** (DetailArrayDetailArrayOfВНаличии CustomAttributes)
-
-    // *** End programmer edit section *** (DetailArrayDetailArrayOfВНаличии CustomAttributes)
-    public class DetailArrayOfВНаличии : ICSSoft.STORMNET.DetailArray
-    {
-        
-        // *** Start programmer edit section *** (IIS.Test17.DetailArrayOfВНаличии members)
-
-        // *** End programmer edit section *** (IIS.Test17.DetailArrayOfВНаличии members)
-
-        
-        /// <summary>
-        /// Construct detail array.
-        /// </summary>
-        /// <summary>
-        /// Returns object with type ВНаличии by index.
-        /// </summary>
-        /// <summary>
-        /// Adds object with type ВНаличии.
-        /// </summary>
-        public DetailArrayOfВНаличии(IIS.Test17.Товары fТовары) : 
-                base(typeof(ВНаличии), ((ICSSoft.STORMNET.DataObject)(fТовары)))
-        {
-        }
-        
-        public IIS.Test17.ВНаличии this[int index]
-        {
-            get
-            {
-                return ((IIS.Test17.ВНаличии)(this.ItemByIndex(index)));
-            }
-        }
-        
-        public virtual void Add(IIS.Test17.ВНаличии dataobject)
-        {
-            this.AddObject(((ICSSoft.STORMNET.DataObject)(dataobject)));
         }
     }
 }

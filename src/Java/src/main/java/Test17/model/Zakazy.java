@@ -24,11 +24,11 @@ public class Zakazy {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "КодЗаказа")
-    private Integer кодзаказа;
-
     @Column(name = "Статус")
     private String статус;
+
+    @Column(name = "КодЗаказа")
+    private Integer кодзаказа;
 
     @Column(name = "Дата")
     private Date дата;
@@ -69,20 +69,20 @@ public class Zakazy {
         return primarykey;
     }
 
-    public Integer getКодЗаказа() {
-      return кодзаказа;
-    }
-
-    public void setКодЗаказа(Integer кодзаказа) {
-      this.кодзаказа = кодзаказа;
-    }
-
     public String getСтатус() {
       return статус;
     }
 
     public void setСтатус(String статус) {
       this.статус = статус;
+    }
+
+    public Integer getКодЗаказа() {
+      return кодзаказа;
+    }
+
+    public void setКодЗаказа(Integer кодзаказа) {
+      this.кодзаказа = кодзаказа;
     }
 
     public Date getДата() {

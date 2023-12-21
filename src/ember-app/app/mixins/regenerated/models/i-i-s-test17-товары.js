@@ -8,7 +8,7 @@ export let Model = Mixin.create({
   кодТовара: DS.attr('number'),
   название: DS.attr('string'),
   ценаЗаЕд: DS.attr('decimal'),
-  вНаличии: DS.hasMany('i-i-s-test17-в-наличии', { inverse: 'товары', async: false })
+  вНаличии: DS.belongsTo('i-i-s-test17-в-наличии', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -36,7 +36,7 @@ export let ValidationRules = {
     descriptionKey: 'models.i-i-s-test17-товары.validations.вНаличии.__caption__',
     validators: [
       validator('ds-error'),
-      validator('has-many'),
+      validator('presence', true),
     ],
   },
 };
@@ -46,18 +46,17 @@ export let defineProjections = function (modelClass) {
     кодТовара: attr('Код товара', { index: 0 }),
     ценаЗаЕд: attr('Цена за ед', { index: 1 }),
     название: attr('Название', { index: 2 }),
-    вНаличии: hasMany('i-i-s-test17-в-наличии', 'В наличии', {
-      количество: attr('Количество', { index: 0 }),
-      дата: attr('Дата', { index: 1 }),
-      местоВыдачи: belongsTo('i-i-s-test17-место-выдачи', 'Место выдачи', {
-        адрес: attr('Адрес', { index: 3, hidden: true })
-      }, { index: 2, displayMemberPath: 'адрес' })
-    })
+    вНаличии: belongsTo('i-i-s-test17-в-наличии', 'ВНаличии', {
+      количество: attr('Количество', { index: 4 })
+    }, { index: 3 })
   });
 
   modelClass.defineProjection('ТоварыL', 'i-i-s-test17-товары', {
     кодТовара: attr('Код товара', { index: 0 }),
     ценаЗаЕд: attr('Цена за ед', { index: 1 }),
-    название: attr('Название', { index: 2 })
+    название: attr('Название', { index: 2 }),
+    вНаличии: belongsTo('i-i-s-test17-в-наличии', 'Количество', {
+      количество: attr('Количество', { index: 3 })
+    }, { index: -1, hidden: true })
   });
 };

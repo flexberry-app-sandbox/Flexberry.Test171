@@ -26,13 +26,13 @@ export default Controller.extend({
               link: 'i-i-s-test17-товары-l',
               caption: i18n.t('forms.application.sitemap.главная.справочники.i-i-s-test17-товары-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.справочники.i-i-s-test17-товары-l.title'),
-              icon: 'archive',
+              icon: 'tasks',
               children: null
             }, {
               link: 'i-i-s-test17-место-выдачи-l',
               caption: i18n.t('forms.application.sitemap.главная.справочники.i-i-s-test17-место-выдачи-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.справочники.i-i-s-test17-место-выдачи-l.title'),
-              icon: 'folder',
+              icon: 'suitcase',
               children: null
             }]
           }, {
@@ -43,7 +43,7 @@ export default Controller.extend({
               link: 'i-i-s-test17-оповещения-l',
               caption: i18n.t('forms.application.sitemap.главная.оповещение.i-i-s-test17-оповещения-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.оповещение.i-i-s-test17-оповещения-l.title'),
-              icon: 'briefcase',
+              icon: 'folder open',
               children: null
             }]
           }, {
@@ -54,19 +54,19 @@ export default Controller.extend({
               link: 'i-i-s-test17-контрагент-l',
               caption: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-контрагент-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-контрагент-l.title'),
-              icon: 'briefcase',
+              icon: 'tasks',
               children: null
             }, {
               link: 'i-i-s-test17-продавец-l',
               caption: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-продавец-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-продавец-l.title'),
-              icon: 'folder',
+              icon: 'list',
               children: null
             }, {
               link: 'i-i-s-test17-заказы-l',
               caption: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-заказы-l.caption'),
               title: i18n.t('forms.application.sitemap.главная.оформление-заказа.i-i-s-test17-заказы-l.title'),
-              icon: 'folder open',
+              icon: 'book',
               children: null
             }]
           }]

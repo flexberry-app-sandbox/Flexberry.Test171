@@ -32,23 +32,24 @@ namespace IIS.Test17
     [View("ТоварыE", new string[] {
             "КодТовара as \'Код товара\'",
             "ЦенаЗаЕд as \'Цена за ед\'",
-            "Название as \'Название\'"})]
-    [AssociatedDetailViewAttribute("ТоварыE", "ВНаличии", "ВНаличииE", true, "", "В наличии", true, new string[] {
-            ""})]
+            "Название as \'Название\'",
+            "ВНаличии as \'ВНаличии\'",
+            "ВНаличии.Количество as \'Количество\'"})]
     [View("ТоварыL", new string[] {
             "КодТовара as \'Код товара\'",
             "ЦенаЗаЕд as \'Цена за ед\'",
-            "Название as \'Название\'"})]
+            "Название as \'Название\'",
+            "ВНаличии.Количество as \'Количество\'"})]
     public class Товары : ICSSoft.STORMNET.DataObject
     {
         
-        private int fКодТовара;
-        
         private double fЦенаЗаЕд;
+        
+        private int fКодТовара;
         
         private string fНазвание;
         
-        private IIS.Test17.DetailArrayOfВНаличии fВНаличии;
+        private IIS.Test17.ВНаличии fВНаличии;
         
         // *** Start programmer edit section *** (Товары CustomMembers)
 
@@ -155,18 +156,17 @@ namespace IIS.Test17
         // *** Start programmer edit section *** (Товары.ВНаличии CustomAttributes)
 
         // *** End programmer edit section *** (Товары.ВНаличии CustomAttributes)
-        public virtual IIS.Test17.DetailArrayOfВНаличии ВНаличии
+        [PropertyStorage(new string[] {
+                "ВНаличии"})]
+        [NotNull()]
+        public virtual IIS.Test17.ВНаличии ВНаличии
         {
             get
             {
                 // *** Start programmer edit section *** (Товары.ВНаличии Get start)
 
                 // *** End programmer edit section *** (Товары.ВНаличии Get start)
-                if ((this.fВНаличии == null))
-                {
-                    this.fВНаличии = new IIS.Test17.DetailArrayOfВНаличии(this);
-                }
-                IIS.Test17.DetailArrayOfВНаличии result = this.fВНаличии;
+                IIS.Test17.ВНаличии result = this.fВНаличии;
                 // *** Start programmer edit section *** (Товары.ВНаличии Get end)
 
                 // *** End programmer edit section *** (Товары.ВНаличии Get end)

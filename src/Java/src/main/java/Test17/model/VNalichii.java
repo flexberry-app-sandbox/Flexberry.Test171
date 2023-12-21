@@ -39,16 +39,6 @@ public class VNalichii {
     @JoinColumn(name = "MestoVydachi", insertable = false, updatable = false)
     private MestoVydachi mestovydachi;
 
-    @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "Tovary")
-    @Convert("Tovary")
-    @Column(name = "Товары", length = 16, unique = true, nullable = false)
-    private UUID _tovaryid;
-
-    @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "Tovary", insertable = false, updatable = false)
-    private Tovary tovary;
-
 
     public VNalichii() {
         super();

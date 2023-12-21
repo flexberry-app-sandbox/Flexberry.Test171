@@ -34,14 +34,16 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
-  "hasMany": [
+  "belongsTo": [
     {
+      "polymorphic": false,
+      "presence": true,
       "name": "вНаличии",
       "relatedTo": "i-i-s-test17-в-наличии",
-      "inverse": "товары"
+      "inverse": null
     }
   ],
+  "hasMany": [],
   "projections": [
     {
       "name": "ТоварыE",
@@ -66,16 +68,30 @@
           "index": 2
         }
       ],
-      "belongsTo": [],
-      "hasMany": [
+      "belongsTo": [
         {
-          "projectionName": "ВНаличииE",
-          "caption": "В наличии",
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВНаличии",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "default",
+          "caption": "ВНаличии",
           "name": "вНаличии",
           "relatedTo": "i-i-s-test17-в-наличии",
           "inverse": null
         }
-      ]
+      ],
+      "hasMany": []
     },
     {
       "name": "ТоварыL",
@@ -100,7 +116,29 @@
           "index": 2
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ВНаличии",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "количество",
+              "caption": "Количество",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Количество",
+          "name": "вНаличии",
+          "relatedTo": "i-i-s-test17-в-наличии",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

@@ -51,9 +51,9 @@ namespace IIS.Test17
     public class Заказы : ICSSoft.STORMNET.DataObject
     {
         
-        private int fКодЗаказа;
-        
         private IIS.Test17.Статусы fСтатус;
+        
+        private int fКодЗаказа;
         
         private System.DateTime fДата;
         

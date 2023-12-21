@@ -1,12 +1,12 @@
 ﻿{
   "propertyLookup": [
     {
-      "master": "местоВыдачи",
-      "displayAttributeName": "адрес",
-      "required": true,
-      "relationName": "ВНаличии.МестоВыдачи",
-      "projection": "МестоВыдачиL",
-      "detailModelName": "i-i-s-test17-в-наличии"
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ВНаличии",
+      "projection": "",
+      "detailModelName": null
     }
   ],
   "external": false,
